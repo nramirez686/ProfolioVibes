@@ -55,3 +55,17 @@ a {
   color: white;
   background-color: rgba(0, 0, 0, 0);
 }
+
+.container {
+  display: flex;
+}
+
+aside {
+  flex: 0 0 auto; /* Allow the <aside> element to shrink and grow as needed */
+  width: 300px; /* Adjust the width as desired */
+  background-color: rgb(228, 227, 225); /* Just for visualization */
+}
+
+main {
+  flex: 1 1 auto; /* Allow the <main> element to take up remaining space */
+}
