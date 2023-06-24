@@ -69,3 +69,30 @@ aside {
 main {
   flex: 1 1 auto; /* Allow the <main> element to take up remaining space */
 }
+
+.contact-links {
+  text-align: center;
+}
+
+.contact-links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-links li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.contact-links a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+.contact-links a:hover {
+  background-color: #333;
+  color: #fff;
+}
