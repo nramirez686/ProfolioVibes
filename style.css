@@ -115,7 +115,7 @@ p {
   height: 100%;
 }
 
-/* Style the text */
+/* text */
 .image-text {
   position: absolute;
   top: 50%;
@@ -126,17 +126,6 @@ p {
   color: #fff;
   padding: 10px;
   font-size: 18px;
-}
-
-/*text styles for image-container1 */
-.image-container1 .image-text {
-  width: 250px;
-  text-align: center;
-}
-.image-container2 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 /*footer*/
