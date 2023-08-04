@@ -71,7 +71,7 @@ h1 {
 }
 
 /* styles.css */
-body-home {
+.body-home {
   margin: 0;
   padding: 0;
   display: flex;
