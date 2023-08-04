@@ -31,3 +31,9 @@ https://nramirez686.github.io/ProfolioVibes/
 ![Website screenshot](./assets/images/about-me.png)
 ![Website screenshot](./assets/images/workpro.png)
 ![Website screenshot](./assets/images/contacts.png)
+
+## **Badges**
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
