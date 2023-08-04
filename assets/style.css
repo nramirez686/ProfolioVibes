@@ -1,0 +1,106 @@
+@media (max-width: 768px) {
+  .desktop-links {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-menu {
+    display: block;
+  }
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+}
+.navbar-links a {
+  margin-right: 15px;
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+.card-img {
+  max-width: 100%; /* Adjust this value as needed to control the image width */
+  height: auto; /* This ensures the image scales proportionally */
+  filter: grayscale(100%);
+}
+.btn-primary {
+  background-color: white; /* Replace 'red' with your desired color */
+  border-color: darkgray; /* Set the border color to match the background color */
+  color: black;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: flex-end; /* Align to the bottom */
+  position: absolute; /* Position it at the bottom */
+  left: 0;
+  right: 0;
+  bottom: 20px; /* Adjust this value to control the distance from the bottom */
+}
+
+.contact-links a {
+  display: inline;
+  color: grey; /* Set the color of the contact links */
+  font-size: 20px; /* Set the font size of the contact links */
+  text-decoration: none; /* Remove underline from links */
+  margin-right: 30px; /* Add some space between links (adjust as needed) */
+}
+
+.contact-links a:hover {
+  color: darkgrey; /* Set the color when the links are hovered */
+}
+.fa-solid {
+  font-size: 60px;
+}
+.icon-text {
+  display: block; /* Ensure the text appears on a new line (block element) */
+  margin-top: 5px; /* Add some space between the icon and text */
+}
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: 80px;
+}
+.about-img {
+  max-width: 80%;
+  max-height: 80%;
+}
+.about-text {
+  flex-direction: inherit;
+}
+@media (max-width: 1000px) {
+  /* Apply styles when the screen width is 768px or smaller */
+  .about-container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center the items horizontally within the container */
+  }
+
+  .about-img {
+    margin-bottom: 20px; /* Add some space between the image and the text */
+  }
+}
+
+/* styles.css */
+body-home {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+footer {
+  background-color: white;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
