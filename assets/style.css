@@ -1,34 +1,15 @@
-@media (max-width: 768px) {
-  .desktop-links {
-    display: none;
-  }
-}
-
-@media (max-width: 768px) {
-  .mobile-menu {
-    display: block;
-  }
-}
-
 body {
   font-family: "Space Grotesk", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 .navbar-links a {
   margin-right: 15px;
   color: black;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 16px;
 }
-.card-img {
-  max-width: 100%; /* Adjust this value as needed to control the image width */
-  height: auto; /* This ensures the image scales proportionally */
-  filter: grayscale(100%);
-}
-.btn-primary {
-  background-color: white; /* Replace 'red' with your desired color */
-  border-color: darkgray; /* Set the border color to match the background color */
-  color: black;
-}
+
 h1 {
   display: flex;
   justify-content: center;
@@ -48,7 +29,7 @@ h1 {
 .contact-links a {
   display: inline;
   color: grey; /* Set the color of the contact links */
-  font-size: 20px; /* Set the font size of the contact links */
+  font-size: 12px; /* Set the font size of the contact links */
   text-decoration: none; /* Remove underline from links */
   margin-right: 30px; /* Add some space between links (adjust as needed) */
 }
@@ -57,7 +38,7 @@ h1 {
   color: darkgrey; /* Set the color when the links are hovered */
 }
 .fa-solid {
-  font-size: 60px;
+  font-size: 50px;
 }
 .icon-text {
   display: block; /* Ensure the text appears on a new line (block element) */
@@ -103,4 +84,41 @@ footer {
   color: white;
   text-align: center;
   padding: 15px;
+}
+
+.card-header {
+  font-size: 20px;
+  background-color: black;
+  color: white;
+}
+.card-img {
+  max-width: 80%; /* Adjust this value as needed to control the image width */
+  height: auto; /* This ensures the image scales proportionally */
+}
+.btn-primary {
+  background-color: black; /* Replace 'red' with your desired color */
+  border-color: darkgray; /* Set the border color to match the background color */
+  color: white;
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center the items horizontally within the container */
+    position: relative;
+  }
+
+  .navbar-links {
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
+  }
+
+  .navbar-links a {
+    margin: 10px 0;
+  }
+
+  .menu-icon {
+    display: block;
+  }
 }
