@@ -27,4 +27,7 @@ This project is released under the MIT License. Feel free to use the challenges 
 ## **Deployed Website Link**
 
 https://nramirez686.github.io/ProfolioVibes/
-![Website screenshot](./assets/Screenshot%202023-06-26%20at%208.00.00%20PM.png)
+![Website screenshot](./assets/images/homeprofolio.png)
+![Website screenshot](./assets/images/about-me.png)
+![Website screenshot](./assets/images/workpro.png)
+![Website screenshot](./assets/images/contacts.png)
