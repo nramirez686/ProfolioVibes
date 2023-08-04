@@ -1,49 +1,65 @@
+/* Reset styles */
 body {
   font-family: "Space Grotesk", sans-serif;
   margin: 0;
   padding: 0;
 }
+
+/* Navbar styles */
+.navbar-links {
+  display: flex;
+  justify-content: flex-end;
+  background-color: white;
+  padding: 10px;
+}
+
 .navbar-links a {
-  margin-right: 15px;
   color: black;
   text-decoration: none;
   font-size: 16px;
+  margin-right: 15px;
 }
 
+/* Header styles */
 h1 {
   display: flex;
   justify-content: center;
   padding-top: 100px;
 }
 
+/* Contact links styles */
 .contact-links {
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: flex-end; /* Align to the bottom */
-  position: absolute; /* Position it at the bottom */
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
   left: 0;
   right: 0;
-  bottom: 20px; /* Adjust this value to control the distance from the bottom */
+  bottom: 20px;
 }
 
 .contact-links a {
   display: inline;
-  color: grey; /* Set the color of the contact links */
-  font-size: 12px; /* Set the font size of the contact links */
-  text-decoration: none; /* Remove underline from links */
-  margin-right: 30px; /* Add some space between links (adjust as needed) */
+  color: grey;
+  font-size: 12px;
+  text-decoration: none;
+  margin-right: 30px;
 }
 
 .contact-links a:hover {
-  color: darkgrey; /* Set the color when the links are hovered */
+  color: darkgrey;
 }
+
 .fa-solid {
   font-size: 50px;
 }
+
 .icon-text {
-  display: block; /* Ensure the text appears on a new line (block element) */
-  margin-top: 5px; /* Add some space between the icon and text */
+  display: block;
+  margin-top: 5px;
 }
+
+/* About section styles */
 .about-container {
   display: flex;
   justify-content: center;
@@ -51,39 +67,26 @@ h1 {
   height: 100vh;
   margin-top: 80px;
 }
+
 .about-img {
   max-width: 80%;
   max-height: 80%;
 }
+
 .about-text {
   flex-direction: inherit;
 }
-@media (max-width: 1000px) {
-  /* Apply styles when the screen width is 768px or smaller */
-  .about-container {
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center the items horizontally within the container */
-  }
 
-  .about-img {
-    margin-bottom: 20px; /* Add some space between the image and the text */
-  }
-}
-
-/* styles.css */
-.body-home {
-  margin: 0;
-  padding: 0;
+/* Project card styles */
+.project-cards {
   display: flex;
-  min-height: 100vh;
-  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
 }
 
-footer {
-  background-color: white;
-  color: white;
-  text-align: center;
-  padding: 15px;
+.card {
+  max-width: 300px;
+  margin: 10px;
 }
 
 .card-header {
@@ -91,34 +94,95 @@ footer {
   background-color: black;
   color: white;
 }
+
 .card-img {
-  max-width: 80%; /* Adjust this value as needed to control the image width */
-  height: auto; /* This ensures the image scales proportionally */
+  max-width: 100%;
+  height: auto;
 }
+
 .btn-primary {
-  background-color: black; /* Replace 'red' with your desired color */
-  border-color: darkgray; /* Set the border color to match the background color */
+  background-color: black;
+  border-color: darkgray;
   color: white;
 }
 
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center the items horizontally within the container */
-    position: relative;
-  }
+/* Footer styles */
+footer {
+  background-color: white;
+  color: black; /* Adjust the text color for visibility */
+  text-align: center;
+  padding: 15px;
+}
 
+/* Media queries for mobile responsiveness */
+@media (max-width: 768px) {
+  /* Navbar */
   .navbar-links {
-    margin-top: 20px;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
   }
 
   .navbar-links a {
-    margin: 10px 0;
+    margin: 0 10px;
   }
 
-  .menu-icon {
-    display: block;
+  /* About section */
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .about-img {
+    margin-bottom: 20px;
+  }
+
+  /* Contact links */
+  .contact-links {
+    position: static;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .contact-links a {
+    margin: 10px 0;
+  }
+}
+/* ... Your existing CSS code ... */
+
+/* Project card styles */
+.project-cards {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  margin: 10px;
+}
+
+.card-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+/* Media queries for mobile responsiveness */
+@media (max-width: 768px) {
+  /* Project cards for smaller screens */
+  .project-cards {
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center cards horizontally */
+  }
+
+  .card {
+    max-width: 80%; /* Adjust card width for better visibility on small screens */
+    margin: 10px auto; /* Center the stacked cards */
+    height: auto;
   }
 }
