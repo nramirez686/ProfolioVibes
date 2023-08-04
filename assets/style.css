@@ -100,6 +100,7 @@ footer {
   border-color: darkgray; /* Set the border color to match the background color */
   color: white;
 }
+
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column; /* Stack items vertically */
@@ -111,7 +112,6 @@ footer {
     margin-top: 20px;
     flex-direction: column;
     align-items: center;
-    display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
   }
 
   .navbar-links a {
