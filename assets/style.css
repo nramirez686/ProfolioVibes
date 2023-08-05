@@ -186,3 +186,15 @@ footer {
     height: auto;
   }
 }
+
+.main-container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  height: 100vh; /* This sets the height of the container to the full viewport height */
+}
+
+.resume-img {
+  padding-top: 100px;
+  max-width: 100%;
+}
